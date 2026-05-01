@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "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";
 
 app.get("/", (req, res) => {
   res.send(`
