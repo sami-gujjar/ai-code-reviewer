@@ -1,9 +1,8 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 app.use(express.json());
-
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-
 app.get("/", (req, res) => {
   res.send(`
     <html>
